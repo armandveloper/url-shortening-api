@@ -61,6 +61,9 @@ img {
 	padding: 1.5rem 3rem;
 	text-align: center;
 	text-transform: capitalize;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .btn--rounded {
 	border-radius: 10rem;
@@ -144,6 +147,7 @@ img {
 .shortener__grid {
 	display: grid;
 	gap: 2.5rem;
+	overflow: hidden;
 }
 .shortener__input {
 	border: none;
