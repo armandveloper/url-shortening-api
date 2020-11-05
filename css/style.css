@@ -65,9 +65,13 @@ img {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	transition: background-color 0.3s ease;
 }
 .btn--rounded {
 	border-radius: 10rem;
+}
+.btn--violet {
+	background-color: var(--dark-violet);
 }
 .btn-wrapper--center {
 	text-align: center;
@@ -114,6 +118,9 @@ img {
 .menu-button:hover .menu-button__line {
 	background-color: var(--very-dark-blue);
 }
+.hero {
+	padding-bottom: 18rem;
+}
 .hero__grid {
 	display: grid;
 	row-gap: 5rem;
@@ -138,12 +145,15 @@ img {
 	text-align: center;
 }
 .shortener {
-	transform: translateY(50%);
+	background-color: #f0f1f6;
 }
 .shortener__box {
 	background-color: var(--dark-violet);
 	border-radius: 1rem;
 	padding: 2.5rem;
+	height: 18.2rem;
+	transform: translateY(-50%);
+	margin-bottom: calc(18.2rem / 2 * -1);
 }
 .shortener__grid {
 	display: grid;
@@ -163,9 +173,33 @@ img {
 .shortener__input::placeholder {
 	color: var(--grayish-violet);
 }
+.shortener__result {
+	background-color: #fff;
+	border-radius: 1rem;
+	margin-top: 2.5rem;
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+}
+.normal-link {
+	margin: 0;
+	text-align: left;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid var(--gray);
+}
+.shorten-link {
+	color: var(--cyan);
+	font-size: 1.8rem;
+}
+.normal-link,
+.shorten-link {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 .features {
 	background-color: #f0f1f6;
-	padding: 18rem 0 10rem;
+	padding: 8rem 0 10rem;
 }
 .features__grid {
 	margin-top: 12rem;
